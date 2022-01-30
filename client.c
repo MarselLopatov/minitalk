@@ -6,7 +6,7 @@
 /*   By: cdoria <cdoria@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 16:21:55 by cdoria            #+#    #+#             */
-/*   Updated: 2022/01/30 20:30:29 by cdoria           ###   ########.fr       */
+/*   Updated: 2022/01/30 20:39:46 by cdoria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,10 +69,10 @@ int main(int argc, char **argv)
 		ft_putstr("Signal error!\n");
 		exit (2);
 	}
-	if (sigaction(SIGUSR1, &sig, NULL))
-	{
-		ft_putstr("Signal error!\n");
-		exit (2);
-	}
+	// if (sigaction(SIGUSR1, &sig, NULL))
+	// {
+	// 	ft_putstr("Signal error!\n");
+	// 	exit (2);
+	// }
 	ft_kill(ft_atoi(argv[1]), argv[2]);
 }

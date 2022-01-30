@@ -13,15 +13,13 @@ FLAGS = -Wall -Wextra -Werror
 
 all: ${NAME}
 
-
 ${NAME}: client server
-	
 
 client: ${CLINET_OBJ} ${OBJS}
-	gcc ${CLINET_OBJ} ${OBJS} -o client -I ${HEADER}
+	gcc ${CLINET_OBJ} ${OBJS} -o $@ -I ${HEADER}
 
 server: ${SERVER_OBJ}
-	gcc ${SERVER_OBJ} ${OBJS} -o server -I ${HEADER}
+	gcc ${SERVER_OBJ} ${OBJS} -o $@ -I ${HEADER}
 
 %.o: %.c ${HEADER}
 	gcc ${FLAGS} -c $< -o $@
@@ -34,4 +32,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean server client re
+.PHONY: all clean fclean re

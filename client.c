@@ -6,7 +6,7 @@
 /*   By: cdoria <cdoria@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 16:21:55 by cdoria            #+#    #+#             */
-/*   Updated: 2022/01/27 19:43:07 by cdoria           ###   ########.fr       */
+/*   Updated: 2022/01/30 20:30:29 by cdoria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ void	ft_kill(int pid, char *message)
 				if (kill(pid, SIGUSR1)) // мб вынести в другую функцию
 					exit(1);
 			}
-			usleep(250);
+			usleep(800);
+
 		}
 		message++;
 	}
@@ -43,7 +44,7 @@ void	ft_kill(int pid, char *message)
 	{
 		if (kill(pid, SIGUSR1))
 			exit(1);
-		usleep(250);
+		usleep(800);
 	}
 }
 

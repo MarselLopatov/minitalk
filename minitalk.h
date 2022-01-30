@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cdoria <cdoria@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/18 16:22:21 by cdoria            #+#    #+#             */
-/*   Updated: 2022/01/19 17:49:56 by cdoria           ###   ########.fr       */
+/*   Created: 2022/01/31 01:26:11 by cdoria            #+#    #+#             */
+/*   Updated: 2022/01/31 01:26:39 by cdoria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK
-# define MINITALK
+#ifndef MINITALK_H
+# define MINITALK_H
 
-#include <signal.h>
-#include <unistd.h>
-#include <stdlib.h>
+# include <signal.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 void	ft_putnbr(int n);
 void	ft_putstr(char *str);

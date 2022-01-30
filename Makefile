@@ -24,6 +24,8 @@ server: ${SERVER_OBJ}
 %.o: %.c ${HEADER}
 	gcc ${FLAGS} -c $< -o $@
 
+bonus: all
+
 clean:
 	rm -f *.o *.g.gch
 
@@ -32,4 +34,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

@@ -6,11 +6,11 @@
 /*   By: cdoria <cdoria@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 01:29:02 by cdoria            #+#    #+#             */
-/*   Updated: 2022/01/31 01:29:04 by cdoria           ###   ########.fr       */
+/*   Updated: 2022/02/02 20:47:28 by cdoria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 void	send_zero(int pid)
 {

@@ -6,11 +6,11 @@
 /*   By: cdoria <cdoria@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 01:29:16 by cdoria            #+#    #+#             */
-/*   Updated: 2022/01/31 01:29:17 by cdoria           ###   ########.fr       */
+/*   Updated: 2022/02/02 20:46:37 by cdoria           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "minitalk_bonus.h"
 
 int	check_ch(siginfo_t *siginfo, char ch)
 {
